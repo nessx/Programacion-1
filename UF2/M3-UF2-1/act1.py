@@ -40,3 +40,4 @@ print "maxima:", max(nota)
 	
 	
 	
+ffmfmfmfmf
