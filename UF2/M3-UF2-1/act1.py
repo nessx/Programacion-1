@@ -37,7 +37,3 @@ for i in range(0,nalumnos,1):
 print "nota media:", sum(nota)/len(nota)
 print "minima:", min(nota)
 print "maxima:", max(nota)
-	
-	
-	
-ffmfmfmfmf
