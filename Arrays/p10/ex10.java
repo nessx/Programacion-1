@@ -3,9 +3,7 @@ import java.io.*;
 public class ex10{
 	
 	public static void main(String[] args) throws IOException {
-		int alumnos, i, search, j; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
-		int suma= 0; //declaro y inicializo la variable suma con un valor de 0
-		int pos = 0;
+		int alumnos, i, search; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
 		int cont = 0;
 		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

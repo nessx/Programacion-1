@@ -3,9 +3,8 @@ import java.io.*;
 public class ex8{
 	
 	public static void main(String[] args) throws IOException {
-		int alumnos, i, mod; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
+		int alumnos, i; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
 		int suma= 0; //declaro y inicializo la variable suma con un valor de 0
-		boolean key = false;
 		int modal = 0;
 		int nuevan = 0;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

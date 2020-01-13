@@ -48,6 +48,7 @@ for i in range (0, nalumnos,1):
 media()
 pos = int(raw_input( "Que posicion quieres modificar?: "))
 
+
 nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
 
 print "\n"

@@ -3,11 +3,9 @@ import java.io.*;
 public class ex9{
 	
 	public static void main(String[] args) throws IOException {
-		int alumnos, i, mod; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
+		int alumnos, i; //declaro y inicializo la variable alumnos y la i a la vez, para que el programa sea mas corto
 		int suma= 0; //declaro y inicializo la variable suma con un valor de 0
-		boolean key = false;
 		int modal = 0;
-		int nuevan = 0;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("##### NOTAS ALUMNOS ######\n");
 		System.out.print("Cuantos alumnos tienes este año: ");
