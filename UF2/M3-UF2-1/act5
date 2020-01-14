@@ -47,11 +47,14 @@ for i in range (0, nalumnos,1):
 		print nota[i]
 media()
 pos = int(raw_input( "Que posicion quieres modificar?: "))
-while nota[pos-1]<0 or nota[i]>10:
-	print "Solo se aceptan notas mayores que 1"
+while pos>len(nota) or pos<0:
+	print "La posicion no existe!"
 	pos = int(raw_input( "Que posicion quieres modificar?: "))
 
 nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
+while nota[pos-1]<0 or nota[pos-1]>10:
+	print "Solo se aceptan notas entre 0 y 10!"
+	nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
 
 print "\n"
 print "CORRECION:",
