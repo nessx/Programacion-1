@@ -1,10 +1,15 @@
  
 import java.io.*;
- 
-public class main{
-	
-	public static void main(String[] args) throws IOException {
+import java.sql.*;
 
+public class main{
+	public static void main(String[] args) throws IOException {
+		//conexion con bbdd
+		try{  
+			Class.forName("com.mysql.jdbc.Driver");  
+			Connection con=DriverManager.getConnection("jdbc:mysql://192.168.33.10:3306/test","austria","austria");
+			Statement stmt=con.createStatement();
+			
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Introduce tu Nombre y tu Apellido: ");
 		String nombre = reader.readLine();
@@ -34,7 +39,7 @@ public class main{
 			// Contador de ocurrencias 
 			contador = 0;
 			cont=0;
-			System.out.println(ntotal);
+			
 			System.out.println("El campo Nombre y Apellidos no puede contener mas de 50 caracteres\n");
 			System.out.print("Introduce tu Nombre y tu Apellido: ");
 			nombre = reader.readLine();
@@ -72,7 +77,7 @@ public class main{
 		System.out.print("Introduce tu Sexo (M/F): ");
 		String S = reader.readLine();
 		
-		while (!S.equals("F") || !S.equals("M") || !S.equals("f") || !S.equals("m")){
+		while (!(S.equals("F") || S.equals("M") || S.equals("f") || S.equals("m"))){
 			System.out.println("una de las dos opciones please :)");
 			System.out.print("Introduce tu Sexo (M/F): ");
 			S = reader.readLine();
