@@ -63,7 +63,7 @@ if nota [pos-1] < 5:
 while nota[pos-1]<0 or nota[pos-1]>10:
 	print "Solo se aceptan notas entre 0 y 10!"
 	nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
-
+	print "hola"
 print "\n"
 print "CORRECION:",
 for i in range (0, nalumnos,1):
