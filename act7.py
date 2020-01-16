@@ -39,6 +39,10 @@ for i in range(0,nalumnos,1):
 	while nota[i]<0 or nota[i]>10:
 		print "la nota tiene que ser mayor que 0 y menor que 10"
 		nota.append(int(raw_input("Introduce la nota del alumno: ")))
+
+        if nota [i] < 5:
+            nota [i] = 5
+
 print "INICIAL:",
 for i in range (0, nalumnos,1):
 	if i<len(nota)-1:
