@@ -39,7 +39,7 @@ for i in range(0,nalumnos,1):
 	while nota[i]<0 or nota[i]>10:
 		print "la nota tiene que ser mayor que 0 y menor que 10"
 		nota.append(int(raw_input("Introduce la nota del alumno: ")))
-
+        #añado un if que hace que toda nota menor que 5 sea igual a 5 para que todos los alumnos aprueben
         if nota [i] < 5:
             nota [i] = 5
 
@@ -56,6 +56,10 @@ while pos>len(nota) or pos<0:
 	pos = int(raw_input( "Que posicion quieres modificar?: "))
 
 nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
+#añado un if que hace que toda nota menor que 5 sea igual a 5 para que todos los alumnos aprueben
+if nota [pos-1] < 5:
+        nota [pos-1] = 5
+
 while nota[pos-1]<0 or nota[pos-1]>10:
 	print "Solo se aceptan notas entre 0 y 10!"
 	nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
