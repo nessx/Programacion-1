@@ -16,9 +16,12 @@ for i in range (2, len(nota),1):
 print ""
 
 pos = int(raw_input("En que posicion quieres eliminar: "))
-while pos > nota [i]:
-    print "Has superado el maximo de posiciones!"
+
+#este while no funciona por alguna razon xd
+while pos > len(nota):
+    print "La posicion no existe!"
     pos = int(raw_input("En que posicion quieres eliminar: "))
+
 nota.pop(pos+1)
 
 print ""
