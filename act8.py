@@ -16,6 +16,10 @@ for i in range (2, len(nota),1):
 print ""
 
 pos = int(raw_input("En que posicion quieres agregar nueva la nota?: "))
+while pos > nota [i]:
+    print "Has superado el maximo de posiciones!"
+    pos = int(raw_input("En que posicion quieres agregar nueva la nota?: "))
+
 add = int(raw_input("Introduce la nota que quieres agragar: "))
 nota.insert(pos+1,add)
 
