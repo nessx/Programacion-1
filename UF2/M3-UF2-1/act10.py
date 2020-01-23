@@ -27,6 +27,6 @@ if cont<1:
 else:
     print ""
     n = nota.index(ins)
-    print "La nota",ins, "esta en la posicion:", n-1
+    print "Hay",cont,"nota con valor",ins, "esta en la posicion:", n-1
 
 print ""
