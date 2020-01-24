@@ -33,7 +33,7 @@ def media ():
 while nalumnos<0 or nalumnos>50:
 	print "la cantidad de alumnos tiene que ser mayor que 1 y menor que 50"
 	nalumnos = int(raw_input("Cuantos alimnos quieres introducir?: "))
-
+ffffff
 for i in range(0,nalumnos,1):
 	nota.append(int(raw_input("Introduce la nota del alumno: ")))
 	while nota[i]<0 or nota[i]>10:
