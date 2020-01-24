@@ -72,7 +72,29 @@ function moduser {
 				sleep 1
 				;;
 			3)
-				read -p "Introduce "
+				read -p "Introduce la nueva fecha de expiración del usuario" data
+				usermod -e $data $opt
+				sleep 1
+				echo "Cambiando fecha de expiracion del usuario"
+				;;
+			4)
+				read -p "Introduce los grupos a los que quieres que pertenezca en usuario. (separado por comas)" group
+				usermod -G $group $opt
+				echo "cambiando usuario de grupo"
+				;;
+			5)
+				read -p "Introduce el nuevo nombre que desea asignarle al usuario" newname
+				usermod -l $newname $opt
+				echo "cambiando nombre del usuario"
+				;;
+			6)
+				echo "Bloquear nombre de usuario. *[AVISO]Con esta opcion bloquearas tu usuario*"
+				usermod -L $opt
+				echo "bloqueando usuario"
+				;;
+			7)
+
+
 
 
 }
