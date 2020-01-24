@@ -71,5 +71,7 @@ for i in range (0, nalumnos,1):
 		print str(nota[i])+",",
 	else:
 		print nota[i]
-media()	
+media()
+
+bb
 	
