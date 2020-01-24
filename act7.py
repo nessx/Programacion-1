@@ -33,12 +33,15 @@ def media ():
 while nalumnos<0 or nalumnos>50:
 	print "la cantidad de alumnos tiene que ser mayor que 1 y menor que 50"
 	nalumnos = int(raw_input("Cuantos alimnos quieres introducir?: "))
-ffffff
+
 for i in range(0,nalumnos,1):
 	nota.append(int(raw_input("Introduce la nota del alumno: ")))
 	while nota[i]<0 or nota[i]>10:
 		print "la nota tiene que ser mayor que 0 y menor que 10"
 		nota.append(int(raw_input("Introduce la nota del alumno: ")))
+        #añado un if que hace que toda nota menor que 5 sea igual a 5 para que todos los alumnos aprueben
+        if nota [i] < 5:
+            nota [i] = 5
 
 print "INICIAL:",
 for i in range (0, nalumnos,1):
@@ -53,10 +56,9 @@ while pos>len(nota) or pos<0:
 	pos = int(raw_input( "Que posicion quieres modificar?: "))
 
 nota [pos-1] = int(raw_input( "Que nota deceas poner?: "))
-
-for j in range(len(nota)):
-	if nota [j] < 5:
-		nota [j] = 5
+#añado un if que hace que toda nota menor que 5 sea igual a 5 para que todos los alumnos aprueben
+if nota [pos-1] < 5:
+        nota [pos-1] = 5
 
 while nota[pos-1]<0 or nota[pos-1]>10:
 	print "Solo se aceptan notas entre 0 y 10!"
@@ -69,5 +71,5 @@ for i in range (0, nalumnos,1):
 		print str(nota[i])+",",
 	else:
 		print nota[i]
-media()	
+media()
 	
