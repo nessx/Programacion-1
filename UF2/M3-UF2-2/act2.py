@@ -28,7 +28,7 @@ H,M,S=hora(H,M,S)
 print "===== OKEY VAMOS!! ===="
 
 os.system("clear")
-print "======= RESULTADO\n ======"
+print "======= RESULTADO ======\n"
 print str(H)+":"+str(M)+":"+str(S)
 print ""
 print "ADIOS...."

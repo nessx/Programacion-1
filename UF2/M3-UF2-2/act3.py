@@ -5,5 +5,3 @@ array = []
 for i in range (0, 4 ,1):
     array.append(int(raw_input("Ingrese un numero: ")))
     array=nums(array)
-
-
