@@ -2,7 +2,7 @@ import java.io.*;
 public class main3 {
     public static void main (String[] args) throws IOException  {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        float a,b,c,d;String str;
+        float a,b,c,d,v1;String str;
         b=0;
       System.out.print("Quanta gent: ");
         String text= reader.readLine();
@@ -24,24 +24,25 @@ public class main3 {
             a = Float.parseFloat(str);
             }
             v[i]=a;
-            System.out.println(v[i]);
         }
 
       for(int i=0;i<=v.length-1;i++){
-            float v1 = v[i];
-b = b + v1;
-        }
+            v1 = v[i];
+            b = b + v1;
+      }
+
       c=v[0];
-        d=v[0];
-        for(int i=0;i<v.length;i++){
-float v1 = v[i];
-            if(v1>c){
-                c=v[i];
-            }
-            if(v1<d){
-                d=v[i];
-            }
-        }
+      d=v[0];
+      for(int i=0;i<v.length;i++){
+        v1 = v[i];
+          if(v1>c){
+              c=v[i];
+          }
+          if(v1<d){
+              d=v[i];
+          }
+      }
+      
       System.out.println();
       for(int i=0;i<v.length;i++){
             System.out.print(v[i]+", ");
