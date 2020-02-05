@@ -4,11 +4,6 @@ import java.sql.*;
 
 public class main{
 	public static void main(String[] args) throws IOException {
-		//conexion con bbdd
-		try{  
-			Class.forName("com.mysql.jdbc.Driver");  
-			Connection con=DriverManager.getConnection("jdbc:mysql://192.168.33.10:3306/test","austria","austria");
-			Statement stmt=con.createStatement();
 			
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Introduce tu Nombre y tu Apellido: ");
@@ -82,6 +77,7 @@ public class main{
 			System.out.print("Introduce tu Sexo (M/F): ");
 			S = reader.readLine();
 		}
+		System.out.println("Los datos se han introducido correctamente!");
 		
 	}
 }
