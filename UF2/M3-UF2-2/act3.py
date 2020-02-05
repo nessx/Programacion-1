@@ -4,4 +4,7 @@ def nums(a,b,c,d):
 array = []
 for i in range (0, 4 ,1):
     array.append(int(raw_input("Ingrese un numero: ")))
-    array=nums(array)
+    
+res=nums(array[0],array[1],array[2],array[3])
+print ""
+print "El maximo es: ",res
