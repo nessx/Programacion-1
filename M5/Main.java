@@ -1,9 +1,8 @@
  
 import java.io.*;
-import java.sql.*;
 
-public class main{
-	public static void main(String[] args) throws IOException {
+public class Main{
+	public static void Main(String[] args) throws IOException {
 			
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Introduce tu Nombre y tu Apellido: ");
