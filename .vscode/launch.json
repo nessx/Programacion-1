@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ex1",
+            "request": "launch",
+            "mainClass": "ex1",
+            "projectName": "Programacion-1_cb3b2383"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - act3",
+            "request": "launch",
+            "mainClass": "act3",
+            "projectName": "Programacion-1_cb3b2383"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - act2",
             "request": "launch",
             "mainClass": "act2",
