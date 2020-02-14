@@ -1,1 +1,11 @@
-{}
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - act3",
+            "request": "launch",
+            "mainClass": "act3",
+            "projectName": "Programacion-1_30e6cb83"
+        }
+    ]
+}
