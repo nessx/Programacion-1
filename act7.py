@@ -73,3 +73,5 @@ for i in range (0, nalumnos,1):
 		print nota[i]
 media()
 	
+
+print "hola"
