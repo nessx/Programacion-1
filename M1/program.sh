@@ -22,46 +22,40 @@ while [ $option != 4 ]; do
 	read -p "Selecciona una opción: " option
 	clear
 	funLinea
-	echo "=== 1.GESTION DE USUARIOS Y GRUPOS  ==="
 	case $option in
 		1)
 			funLinea
+			echo "=== 1.GESTION DE USUARIOS Y GRUPOS  ==="
 			salto
-			echo "1.Añadir un usuario"
-			echo "2.Añadir un grupo"
-			echo "3.Modificar un usuario"
-			echo "4.Modificar un grupo"
-			echo "5.Eliminar un usuario"
-			echo "6.Eliminar un grupo"
-			echo "7.Lista de los usuarios del sistema"
-			echo "8.Lista de los usuarios del grupo"
-			echo "9.Cargar usuarios de manera masiva"
-			echo "10.Volver"
-			salto
-			read -p "Selecciona una opción: " opt
-
-			funLinea
-	esac
-	case $option in
-		1)
-			funLinea
-			echo "=== 1.AÑADIR UN USUARIO"
-			salto
-			addgroup
+			menu
 	esac
 	case $option in 
 		2)
 			funLinea
-			echo "=== 2.AÑADIR UN GRUPO ==="
+			echo "=== 2.GESTION DE FICHEROS Y DIRECTORIOS==="
 			salto
-			adduser
+			funLinea
+			echo "1.Nombre del fichero"
+			echo "2.Leer fichero"
+			echo "3.Nombre del fichero a eliminar"
+			echo "4.Cambio de permisos a fichero"
+			echo "5.Asignar fichero/directorio a un usuario"
+			echo "6.Asignar fichero/directorio a un grupo"
+			echo "7.Ver mascara"
+			echo "8.Cambiar mascara"
+			echo "9.Crear un directorio"
+			echo "10.Mover un directorio"
+			echo "11.Eliminar direectorio"
+			echo "12.Ver detalle del directorio"
+			salto
+			read -p "Selecciona una opción: " op3
+			dir
 	esac
 	case $option in
 		3)
 			funLinea
-			echo "=== 3.MODIFICAR USUARIO ==="
+			echo "=== 3.GESTION DE PROGRAMARIO ==="
 			salto
-			modgroup
 	esac
 	case $option in
 		4)
