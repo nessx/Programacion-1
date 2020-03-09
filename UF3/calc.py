@@ -61,6 +61,8 @@ while opc != "0":
 
         try:
             print "Resultado: ", div(A,B)
+        except ZeroDivisionError:
+            print "No puedes dividir entre zero einstein!!"
         except:
             print "algo esta mal :("
     else:

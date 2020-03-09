@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - act2",
+            "request": "launch",
+            "mainClass": "UF3.act2",
+            "projectName": "Programacion-1_30e6cb83"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - matriz1",
             "request": "launch",
             "mainClass": "matriz1",
