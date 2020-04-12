@@ -4,6 +4,8 @@ print "#####################"
 print "##### TEST FILE #####"
 print "#####################\n"
 
+print "hh"
+
 file = raw_input("Donde esta el archivo?: ")
 
 try:
