@@ -13,5 +13,5 @@ try:
 
 except IOError:
     print("ERROR: El archivo no es accesible o no existe!")
-finally:
+else:
     archivo.close()
