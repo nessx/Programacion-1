@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 print "#####################"
-print "##### EX 6 #####"
+print "####### EX 6 ########"
 print "#####################\n"
 
 file = raw_input("Donde esta el archivo?: ")
