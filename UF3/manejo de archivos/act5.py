@@ -7,8 +7,11 @@ print "#####################\n"
 file = raw_input("Donde esta el archivo?: ")
 
 try:
-    archivo = open(file, "r")
-    print "El archivo contiene: \n", (archivo.read())
+    with open(file,'r') as archivo:
+        print"El archivo contiene: "   
+        for linea in archivo:        
+            for palabras in linea.split():            
+                print (palabras)
 
 except IOError:
     print("ERROR: El archivo no es accesible o no existe!")
