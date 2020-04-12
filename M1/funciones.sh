@@ -1,5 +1,4 @@
 #!/bin/bash
-#ndndndnn
 
 #SIMPLEMENTE TE DA LA FECHA
 DIA=`date +"%d/%m/%Y"`
