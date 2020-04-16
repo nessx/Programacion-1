@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GatPersa",
+            "request": "launch",
+            "mainClass": "ex1.GatPersa",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GatPersa",
+            "request": "launch",
+            "mainClass": "GatPersa",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - act2",
             "request": "launch",
             "mainClass": "UF3.act2",
