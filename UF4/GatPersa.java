@@ -8,20 +8,23 @@ public class GatPersa {
     }
 }
 */
-
-/*public class GatPersa {
-    int vides = -12;   // vides disponibles del gat Persa
+/*
+public class GatPersa {
+    int vides = 7;   // vides disponibles del gat Persa
     public static void main(String[] args) {
         GatPersa renat;           // declarem l'objecte (la referència) al gat
         renat = new GatPersa();   // creem la instància del gat Renat.
         System.out.println("Abans el gat Renat tenia " + renat.vides + " vides");
         //renat.vides = renat.vides - 1;  // Renat ha tingut un accident
+        renat.vides=-12;
         System.out.println("Ara el gat Renat té " + renat.vides);
     }
 }*/
 
+
 public class GatPersa {
     int vides = 7;   // vides disponibles del gat Persa
+    String estat= "estirat";
  
     public static void main(String[] args) {
         GatPersa renat_I;
@@ -40,7 +43,7 @@ public class GatPersa {
         System.out.println("El gat Renat II té " + renat_II.vides + " vides");
  
         renat_I.vides++;
-        System.out.println("El gat Renat I té  " + renat_I.vides + " vides");
-        System.out.println("El gat Renat II té " + renat_II.vides + " vides");
+        System.out.println("-El gat Renat I té  " + renat_I.vides + " vides");
+        System.out.println("-El gat Renat II té " + renat_II.vides + " vides");
     }
 }

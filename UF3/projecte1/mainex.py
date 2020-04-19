@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import csv
 
 print "#####################"
@@ -15,8 +18,9 @@ try:
 	archivo2.write("border: 1px solid black;")
 	archivo2.write("}")
 	archivo2.write("</style>\n")
-
+	
 	archivo2.write("<body>\n")
+	archivo2.write("<h1>title</h1>\n")
 	archivo2.write("<table>\n")
 	archivo2.write("<tr>\n")
 	archivo2.write("<th> years </th>\n")
@@ -93,6 +97,7 @@ except ValueError:
 except TypeError:
     print("ERROR")
 else:
-    archivo.close()
+	print ("PROGRAMA EJECUTADO SIN ERRORES :)")
+	archivo.close()
 
 
