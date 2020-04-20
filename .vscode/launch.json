@@ -4,6 +4,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - estatgat",
             "request": "launch",
+            "mainClass": "act9.estatgat",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - estatgat",
+            "request": "launch",
+            "mainClass": "act8.estatgat",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - estatgat",
+            "request": "launch",
             "mainClass": "act7.estatgat",
             "projectName": "Programacion-1_24f39515"
         },
