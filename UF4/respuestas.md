@@ -40,10 +40,10 @@ propiedad.variable = propiedad.variable y las operaciones junto con el valor que
 1 instancies.
 
 -I fins la línia 6?
-2 instancies
+1 instancies
 
 -I fins la línia 9?
-3 instancies
+2 instancies
 
 -Perquè les línies 7 i 10 mostren les mateixes vides pels gats Renat I i Renat II?
 por que aunque sean gatos diferentes las instancias están invocando a la misma variable “instancia.variable”.
@@ -84,3 +84,60 @@ no funcionaria.
 si sigue funcionando, ha dejado de ejecutarse las impresiones y no se han instanciado objetos.
 
 -- PREGUNTES EX 5
+
+
+
+-- PREGUNTES EX 6
+
+--Què passa si intentes executar el següent codi a UsaGatPersa? perquè creus?
+te da error por que la variable vidas esta encapsulada y no puede ser vista desde un programa exterior, a menos que lo hagas con un metodo getter.
+
+--Què s'està declarant a la línia 3? Així, que pot voler dir mètode en notació POO?
+un metodo getter para devolver el valor de la variable vida.
+
+--Indica quina sortida genera el següent main() i explica perquè és aquesta?
+
+Al gat Renat li queden 7 vides
+Al gat Renat li queden 7 vides -> por que no entra en la condicion del metodo main() -> if (vides >= 0) {this.vides = vides;}
+Al gat Renat li queden 12 vides
+
+--Amb aquesta definició, és possible fer que, a partir d'una instància de GatPersa, el nombre de vides estigui malament? Perquè o Com?
+#######
+
+                                - - PREGUNTES EX 7 - - 
+--Crea els mètodes setters i getters necessaris per garantir que l'estat del Persa sigui sempre correcte, a l'hora que pugui ser canviat.
+
+public class GatPersa {
+    private String estat;
+
+    public String getestat() { // mètode que retorna el nombre de vides
+        return estat;
+    }
+
+    public void setestat(String estat) {
+        switch(estat){ 
+            case "parado":
+                this.estat = "parado"; 
+				break; 
+            case "acostado":
+                this.estat = "acostado";
+                break;
+
+            case "sentado":
+                this.estat = "sentado";
+				break; 
+			default: 
+                this.estat = "ERROR: estado incorrecto!"; 
+		} 
+    }
+
+}
+
+-- Crea un main() que demostri el funcionament dels nous mètodes.
+
+renat.setestat("acostado");
+System.out.println("El gato persa ahora esta " + renat.getestat());
+
+
+
+
