@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - project",
+            "request": "launch",
+            "mainClass": "project",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CSVReader",
+            "request": "launch",
+            "mainClass": "CSVReader",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - hola",
             "request": "launch",
             "mainClass": "hola",
