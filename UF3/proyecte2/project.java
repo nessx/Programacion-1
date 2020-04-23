@@ -3,7 +3,6 @@ import java.io.*;
 public class project {
 
     public static void main(String[] args) {
-
         
         BufferedReader br = null;
         String line = "";
@@ -14,7 +13,7 @@ public class project {
             System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
             String file = reader.readLine();
 
-            System.out.print("Que nombre decea darle al archivo sql (sin extension): ");
+            System.out.print("Que nombre desea darle al archivo sql (sin extension): ");
             String salidasql = reader.readLine();
             
             System.out.print("Como le quiere llamar a la base de datos?: ");
