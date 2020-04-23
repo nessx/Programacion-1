@@ -1,11 +1,4 @@
-﻿Encuesta sobre Métodos de Producción en las Explotaciones Agrícolas
-Clasificación según superficie agrícola utilizada
-Explotaciones con herbívoros (Bovinos, ovinos, caprinos y equinos)
-Unidades: explotaciones
-
-,Total de explotaciones,Total de explotaciones: < 3 meses de pastoreo,Total de explotaciones: 3 a < 6 meses de pastoreo,Total de explotaciones: 6 a < 9 meses de pastoreo,Total de explotaciones: 9 a <= 12 meses de pastoreo,Explotaciones con herbívoros que pastan en su propia explotación: Total,Explotaciones con herbívoros que pastan en su propia explotación: < 3 meses de pastoreo,Explotaciones con herbívoros que pastan en su propia explotación: 3 a < 6 meses de pastoreo,Explotaciones con herbívoros que pastan en su propia explotación: 6 a < 9 meses de pastoreo,Explotaciones con herbívoros que pastan en su propia explotación: 9 a <= 12 meses de pastoreo,Explotaciones que utilizan tierras comunales: Total,Explotaciones que utilizan tierras comunales: < 3 meses de pastoreo,Explotaciones que utilizan tierras comunales: 3 a < 6 meses de pastoreo,Explotaciones que utilizan tierras comunales: 6 a < 9 meses de pastoreo,Explotaciones que utilizan tierras comunales: 9 a <= 12 meses de pastoreo,
-Explotaciones con SAU,6.653,464,1.250,1.048,3.891,5.091,253,406,751,3.682,1.562,211,844,297,209,
-< 1,56,10,0,0,46,40,0,0,0,40,16,10,0,0,6,
+﻿< 1,56,10,0,0,46,40,0,0,0,40,16,10,0,0,6,
 1 a < 2,161,0,0,0,161,161,0,0,0,161,0,0,0,0,0,
 2 a < 5,699,183,15,201,299,529,80,0,180,269,170,103,15,21,30,
 5 a < 10,939,38,151,94,655,768,26,65,74,603,170,12,86,20,52,
@@ -14,5 +7,3 @@ Explotaciones con SAU,6.653,464,1.250,1.048,3.891,5.091,253,406,751,3.682,1.562,
 30 a < 50,1.017,126,138,177,575,839,83,47,145,564,179,43,92,33,11,
 50 a < 100,1.136,18,347,78,693,821,15,91,59,655,315,3,256,18,38,
 >=100,1.016,25,267,201,522,656,6,11,141,497,359,18,256,60,25,
-Notas:
-Fuente: Instituto Nacional de Estadística

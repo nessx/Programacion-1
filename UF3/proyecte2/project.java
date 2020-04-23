@@ -40,7 +40,7 @@ public class project {
             FileWriter escritor=new FileWriter(salidasql+".sql");
 
             //informo en el archivo log que el fichero se ha creado correctamente
-            logger.log(Level.INFO, "El archivo"+salidasql+".sql"+"ha sido creado correctamente!!");
+            logger.log(Level.INFO, "El archivo "+salidasql+".sql"+" ha sido creado correctamente!!");
 
             //Crear base de datos
             escritor.write("CREATE DATABASE "+bbddname+";\n");
@@ -77,7 +77,7 @@ public class project {
                 //System.out.println(country[0]+","+ country[1].trim() + "," + country[2] + "," + country[3] + "," + country[4] + "," + country[5] + "," + country[6]);
             }
             //informo en el archivo log que los datos se han insertado correctamente
-            logger.log(Level.INFO, "Los datos se han insertado correctamente en la tabla"+tablename);
+            logger.log(Level.INFO, "Los datos se han insertado correctamente en la tabla "+tablename);
 
             System.out.println("EL PROGRAMA SE HA EJECUTADO CORRECTAMENTE!!");
             escritor.close();

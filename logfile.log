@@ -1,0 +1,40 @@
+2020-04-23 21:33:21,513 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 52, in <module>
+    archivo2.write("<th> years",i,"</th>\n")
+TypeError: function takes exactly 1 argument (3 given)
+2020-04-23 21:35:45,336 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 52, in <module>
+    archivo2.write("<th> years"+i+"</th>\n")
+TypeError: cannot concatenate 'str' and 'int' objects
+2020-04-23 21:53:12,352 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 59, in <module>
+    print len(lector)
+TypeError: object of type '_csv.reader' has no len()
+2020-04-23 22:02:35,184 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 47, in <module>
+    for j in range (0,raw-1):
+TypeError: unsupported operand type(s) for -: 'dict' and 'int'
+2020-04-23 22:06:55,928 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 48, in <module>
+    for j in range (0,raw-1):
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+2020-04-23 22:07:58,088 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 46, in <module>
+    k = len(archivox)
+TypeError: object of type 'file' has no len()
+2020-04-23 22:08:45,865 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 47, in <module>
+    for j in range (0,raw-1):
+TypeError: unsupported operand type(s) for -: 'list' and 'int'
+2020-04-23 22:31:27,957 : CRITICAL : TypeError occurred
+Traceback (most recent call last):
+  File "d:/Archivos/Programacion-1/UF3/projecte1/main.py", line 46, in <module>
+    lector2 = csv.reader(archivo3, delimiter=deli)
+TypeError: "delimiter" must be an 1-character string
