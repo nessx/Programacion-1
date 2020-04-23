@@ -20,7 +20,13 @@ print "#####################\n"
 
 
 try:
-	archivo2 = open("index.html","w+")
+
+	nombrearchivo = raw_input("Cual es el nombre del archivo csv (sin extension)?: ")
+	nombrehtml = raw_input("Que nombre desea darle al archivo html (sin extension): ")
+
+	#Escribo las variables en el fichero html
+
+	archivo2 = open(nombrehtml+".html","w+")
 	archivo2.write("<html>\n")
 	archivo2.write("<head>\n")
 
@@ -43,8 +49,10 @@ try:
 	archivo2.write("<th> dato6 </th>\n")
 	archivo2.write("</tr>\n")
 	archivo2.write("<tr>\n")
-	
-	with open('01001c.csv') as archivo:
+
+	#######################################
+
+	with open(nombrearchivo+'.csv') as archivo:
 		lector = csv.reader(archivo, delimiter=',')
 		for row in lector:
 			archivo2.write("<tr>\n")
