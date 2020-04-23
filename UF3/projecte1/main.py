@@ -3,6 +3,7 @@
 
 import csv
 import logging
+import os.path as path
 
 #configuracion del log
 logger = logging.getLogger(__name__)  
@@ -14,14 +15,23 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 #END
 
+key = True
+
 print "#####################"
 print "## CSV A HTML TABLA##"
 print "#####################\n"
 
 
 try:
-
 	nombrearchivo = raw_input("Cual es el nombre del archivo csv (sin extension)?: ")
+	while (key):
+		if not path.exists(nombrearchivo+".csv"):
+			print "El archivo",nombrearchivo+".csv no existe!"
+			nombrearchivo = raw_input("Cual es el nombre del archivo csv (sin extension)?: ")
+		else:
+			print "Archivo",nombrearchivo+".csv encontrado!"
+			key = False
+
 	nombrehtml = raw_input("Que nombre desea darle al archivo html (sin extension): ")
 
 	deli = raw_input("Indica el delimitador: ")
