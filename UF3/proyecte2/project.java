@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.logging.*;
 
+
 public class project {
 
     public static void main(String[] args) {
@@ -20,9 +21,15 @@ public class project {
             SimpleFormatter formatter = new SimpleFormatter();  
             fh.setFormatter(formatter);
             //END
-
+            
             System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
             String file = reader.readLine();
+
+            File f = new File(file+".csv");
+
+            if(!f.exists() && !f.isFile()) {
+                System.out.println("No existe!!");
+            }
 
             System.out.print("Que nombre desea darle al archivo sql (sin extension): ");
             String salidasql = reader.readLine();
