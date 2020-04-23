@@ -41,8 +41,9 @@ try:
 	archivo2 = open(nombrehtml+".html","w+")
 	archivo2.write("<html>\n")
 	archivo2.write("<head>\n")
-	archivo2.write("<style>\n")
 
+	#aqui comienza el estilo
+	archivo2.write("<style>\n")
 	archivo2.write("table{")
 	archivo2.write("background-color: white;")
 	archivo2.write("text-align: left;")
@@ -73,6 +74,8 @@ try:
 
 
 	archivo2.write("</style>\n")
+	#END
+
 	archivo2.write("<body>\n")
 	archivo2.write("<h1><center>Conversor de csv a html</center></h1>\n")
 	archivo2.write('<div>\n')
