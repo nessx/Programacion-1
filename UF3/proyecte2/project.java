@@ -1,14 +1,35 @@
 import java.io.*;
+import java.util.logging.*;
 
 public class project {
 
     public static void main(String[] args) {
-        
         BufferedReader br = null;
         String line = "";
 
+        //archivo log
+        Logger logger = Logger.getLogger("MyLog");  
+        FileHandler fh; 
+
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+            //area del log
+            fh = new FileHandler("file.log");  
+            logger.addHandler(fh);
+            SimpleFormatter formatter = new SimpleFormatter();  
+            fh.setFormatter(formatter);
+
+            //escribo dentro del log
+            logger.info("My first log");
+            logger.log(Level.INFO, "My first log");
+            logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
+            logger.log(Level.SEVERE, "ejemlo");
+
+
+            
+
+            //END
 
             System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
             String file = reader.readLine();
@@ -24,6 +45,8 @@ public class project {
             
             String csvFile = file+".csv";
             br = new BufferedReader(new FileReader(csvFile));
+
+            //crear el archivo sql
             FileWriter escritor=new FileWriter(salidasql+".sql");
 
             //Crear base de datos
