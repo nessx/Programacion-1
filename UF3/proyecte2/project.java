@@ -25,12 +25,17 @@ public class project {
             System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
             String file = reader.readLine();
 
+
+            //comprovacion de existencia del archivo
             File f = new File(file+".csv");
 
             if(!f.exists() && !f.isFile()) {
                 System.out.println("No existe!!");
             }
+            //END
 
+            
+            //preguntas
             System.out.print("Que nombre desea darle al archivo sql (sin extension): ");
             String salidasql = reader.readLine();
             
@@ -42,6 +47,7 @@ public class project {
             
             String csvFile = file+".csv";
             br = new BufferedReader(new FileReader(csvFile));
+            //END
 
             //crear el archivo sql
             FileWriter escritor=new FileWriter(salidasql+".sql");
@@ -73,6 +79,7 @@ public class project {
             //informo en el archivo log que la tabla se ha creado correctamente
             logger.log(Level.INFO, "La tabla "+tablename+" ha sido creada correctamente!!");
 
+            //loop para repetir las tablas
             while ((line = br.readLine()) != null) {
 
                 String[] country = line.split(",");
@@ -80,6 +87,7 @@ public class project {
                 //insertar tablas
                 escritor.write("INSERT INTO `"+tablename+"` (anos, dato1, dato2, dato3, dato4, dato5, dato6) VALUES"+" ("+country[0].trim()+","+ country[1] + "," + country[2] + "," + country[3] + "," + country[4] + "," + country[5]+ "," + country[6]+");\n");
             }
+
             //informo en el archivo log que los datos se han insertado correctamente
             logger.log(Level.INFO, "Los datos se han insertado correctamente en la tabla "+tablename);
 
