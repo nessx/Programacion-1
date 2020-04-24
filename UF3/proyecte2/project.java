@@ -117,16 +117,14 @@ public class project {
             logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
         } catch (IOException e) {
             e.printStackTrace();
-            logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
-            logger.log(Level.SEVERE, "ejemlo");
+            logger.log(Level.WARNING, "Se ha producido un error en la entrada/salida");
         } finally {
             if (br != null) {
                 try {
                     br.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                    logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
-                    logger.log(Level.SEVERE, "ejemlo");
+                    logger.log(Level.WARNING, "Se ha producido un error en la entrada/salida");
                 }
             }
         }
