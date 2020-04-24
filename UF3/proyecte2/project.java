@@ -83,10 +83,16 @@ public class project {
             //loop para repetir las tablas
             while ((line = br.readLine()) != null) {
 
-                String[] country = line.split(",");
-
-                //insertar tablas
-                escritor.write("INSERT INTO `"+tablename+"` (anos, dato1, dato2, dato3, dato4, dato5, dato6) VALUES"+" ("+country[0].trim()+","+ country[1] + "," + country[2] + "," + country[3] + "," + country[4] + "," + country[5]+ "," + country[6]+");\n");
+                String[] datos = line.split(",");
+                try{
+                    //insertar tablas
+                    escritor.write("INSERT INTO `"+tablename+"` (anos, dato1, dato2, dato3, dato4, dato5, dato6) VALUES"+" ("+datos[0].trim()+","+ datos[1] + "," + datos[2] + "," + datos[3] + "," + datos[4] + "," + datos[5]+ "," + datos[6]+");\n");
+                }
+                catch(ArrayIndexOutOfBoundsException excepcion){
+                    System.out.println(" Error de índice en un array");
+                    logger.log(Level.WARNING, "Error de índice en un array");
+                    continue;
+		         }
             }
 
             //informo en el archivo log que los datos se han insertado correctamente
@@ -98,7 +104,6 @@ public class project {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
-            logger.log(Level.SEVERE, "ejemlo");
         } catch (IOException e) {
             e.printStackTrace();
             logger.log(Level.WARNING, "Ocurrio un error de acceso en 0xFF");
