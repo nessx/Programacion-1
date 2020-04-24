@@ -41,6 +41,7 @@ try:
 	archivo2 = open(nombrehtml+".html","w+")
 	archivo2.write("<html>\n")
 	archivo2.write("<head>\n")
+	archivo2.write('<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />\n')
 
 	#aqui comienza el estilo
 	archivo2.write("<style>\n")
@@ -54,7 +55,12 @@ try:
 	archivo2.write("}")
 
 	archivo2.write("th, td{")
-	archivo2.write("padding: 20px;")
+	archivo2.write("padding: 20px;")    
+	archivo2.write("}")
+
+	archivo2.write("body{")
+	archivo2.write("color: #555;")
+	archivo2.write("font-family: 'Droid Sans', sans-serif;")
 	archivo2.write("}")
 
 	archivo2.write("thead{")
@@ -77,7 +83,7 @@ try:
 	#END
 
 	archivo2.write("<body>\n")
-	archivo2.write("<h1><center>Conversor de csv a html</center></h1>\n")
+	archivo2.write("<h1><center>Resultados</center></h1>\n")
 	archivo2.write('<div>\n')
 	archivo2.write("<table>\n")
 	archivo2.write("<thead>\n")

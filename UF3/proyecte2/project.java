@@ -79,9 +79,6 @@ public class project {
 
                 //insertar tablas
                 escritor.write("INSERT INTO `"+tablename+"` (anos, dato1, dato2, dato3, dato4, dato5, dato6) VALUES"+" ("+country[0].trim()+","+ country[1] + "," + country[2] + "," + country[3] + "," + country[4] + "," + country[5]+ "," + country[6]+");\n");
-
-                //test
-                //System.out.println(country[0]+","+ country[1].trim() + "," + country[2] + "," + country[3] + "," + country[4] + "," + country[5] + "," + country[6]);
             }
             //informo en el archivo log que los datos se han insertado correctamente
             logger.log(Level.INFO, "Los datos se han insertado correctamente en la tabla "+tablename);
