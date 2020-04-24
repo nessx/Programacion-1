@@ -21,6 +21,8 @@ print "#####################"
 print "## CSV A HTML TABLA##"
 print "#####################\n"
 
+print "== PD: convierte todo tipo de csv a tabla html =="
+
 
 try:
 	nombrearchivo = raw_input("Cual es el nombre del archivo csv (sin extension)?: ")
@@ -41,7 +43,7 @@ try:
 	archivo2 = open(nombrehtml+".html","w+")
 	archivo2.write("<html>\n")
 	archivo2.write("<head>\n")
-	archivo2.write('<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />\n')
+	archivo2.write('<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans" />\n')
 
 	#aqui comienza el estilo
 	archivo2.write("<style>\n")
@@ -65,7 +67,7 @@ try:
 
 	archivo2.write("thead{")
 	archivo2.write("background-color: #246355;")
-	archivo2.write("border-bottom: solid 5px #0F362D;")
+	archivo2.write("border-bottom: solid 5px #CA2B2D;")
 	archivo2.write("color: white;")
 	archivo2.write("}")
 
@@ -74,7 +76,7 @@ try:
 	archivo2.write("}")
 
 	archivo2.write("tr:hover td{")
-	archivo2.write("background-color: #369681;")
+	archivo2.write("background-color: #CA2B2D;")
 	archivo2.write("color: white;")
 	archivo2.write("}")
 
@@ -90,15 +92,20 @@ try:
 
 	## tuve que abrirlo otra vez por que con el de abajo no dejaba :(
 	with open(nombrearchivo+'.csv') as archivo3:
-		lector2 = csv.reader(archivo3, delimiter=deli)
-		for raw in lector2:
-			hosti = len(raw)
+		try:
+			lector2 = csv.reader(archivo3, delimiter=deli)
+			for raw in lector2:
+				hosti = len(raw)
+				break
 
-		for i in range (0,hosti-1):
-			archivo2.write("<th> Dato"+str(i)+"</th>\n")
+			for i in range (0,hosti-1):
+				archivo2.write("<th> Dato"+str(i)+"</th>\n")
 
-		archivo2.write("</thead>\n")
-		archivo2.write("<tr>\n")
+			archivo2.write("</thead>\n")
+			archivo2.write("<tr>\n")
+		except TypeError:
+			print "Has puesto dos delimitadores, el programa solo acepta 1"
+		
 	#END
 
 
@@ -134,7 +141,7 @@ except ValueError:
     print("ERROR: I/O operacion en un archivo cerrado, revisa que no cierras el archivo antes de leer las lineas que necesites.")
     logger.critical("ValueError occurred", exc_info=True)
 except TypeError:
-    print("ERROR")
+    print("ERROR: tipo de argumento inapropiado")
     logger.critical("TypeError occurred", exc_info=True)
 else:
 	print ("PROGRAMA EJECUTADO SIN ERRORES :)")

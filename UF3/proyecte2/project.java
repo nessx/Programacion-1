@@ -8,6 +8,8 @@ public class project {
         //declaracion y inicializacion de variables
         BufferedReader br = null;
         String line = "";
+        boolean key = true;
+        
 
         //archivo log
         Logger logger = Logger.getLogger("MyLog");  
@@ -26,12 +28,22 @@ public class project {
             System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
             String file = reader.readLine();
 
-
-            //Comprovacion de existencia del archivo AUN NO FUNCIONA BUENO, OSEA SI PERO NO DEJAME, EN PAZ
+            //comprobacion de existencia del archivo
             File f = new File(file+".csv");
 
-            if(!f.exists() && !f.isFile()) {
-                System.out.println("No existe!!");
+            while (key){
+
+                if(!f.exists()){
+                    System.out.println("El archivo "+f+" no existe!!");
+    
+                    System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
+                    String nestor = reader.readLine();
+                    file = nestor;
+                    f = new File(file+".csv");
+                }
+                else{
+                    key=false;
+                }
             }
             //END
 
