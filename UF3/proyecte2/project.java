@@ -27,7 +27,7 @@ public class project {
             String file = reader.readLine();
 
 
-            //Comprovacion de existencia del archivo
+            //Comprovacion de existencia del archivo AUN NO FUNCIONA BUENO, OSEA SI PERO NO DEJAME, EN PAZ
             File f = new File(file+".csv");
 
             if(!f.exists() && !f.isFile()) {
