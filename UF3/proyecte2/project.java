@@ -5,6 +5,7 @@ import java.util.logging.*;
 public class project {
 
     public static void main(String[] args) {
+        //declaracion y inicializacion de variables
         BufferedReader br = null;
         String line = "";
 
