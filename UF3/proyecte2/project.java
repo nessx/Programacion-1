@@ -27,7 +27,7 @@ public class project {
             String file = reader.readLine();
 
 
-            //comprovacion de existencia del archivo
+            //Comprovacion de existencia del archivo
             File f = new File(file+".csv");
 
             if(!f.exists() && !f.isFile()) {
@@ -36,7 +36,7 @@ public class project {
             //END
 
             
-            //preguntas
+            //Preguntas
             System.out.print("Que nombre desea darle al archivo sql (sin extension): ");
             String salidasql = reader.readLine();
             
