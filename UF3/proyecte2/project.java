@@ -37,8 +37,7 @@ public class project {
                     System.out.println("El archivo "+f+" no existe!!");
     
                     System.out.print("Cual es el nombre del archivo csv (sin extension)?: ");
-                    String nestor = reader.readLine();
-                    file = nestor;
+                    file = reader.readLine();
                     f = new File(file+".csv");
                 }
                 else{
