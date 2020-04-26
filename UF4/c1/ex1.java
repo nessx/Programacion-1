@@ -1,6 +1,7 @@
 package c1;
 
 import java.io.*;
+import java.util.concurrent.TimeUnit;
 
 public class ex1 {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -26,6 +27,7 @@ public class ex1 {
         while(reloj1.getfin()){
             System.out.println(reloj1.toString());
             reloj1.incrementa();
+            //TimeUnit.SECONDS.sleep(1);
         }
     }
 
