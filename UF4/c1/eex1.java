@@ -6,6 +6,7 @@ public class eex1 {
     private int hora=0;
     private boolean bol = true;
     
+    
     int gethora(){
     return hora;
     }
