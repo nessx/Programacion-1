@@ -6,21 +6,21 @@ public class eex1 {
     private int hora=0;
     private boolean bol = true;
     
-    
+
     int gethora(){
-    return hora;
+        return hora;
     }
     
     public void sethora(int hora){
-    this.hora=hora;
+        this.hora=hora;
     }
     
     public int getminutos(){
-    return minutos;
+        return minutos;
     }
     
     public void setminutos(int minutos){
-    this.minutos=minutos;
+        this.minutos=minutos;
     }
     
     public  int getsegundos(){
@@ -67,12 +67,7 @@ public class eex1 {
     
             }
         }
-       }
-    /*
-    public void decrementa(int){
-
     }
-    */
 
     /*
     public int compareTo(Hora){
