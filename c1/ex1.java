@@ -1,7 +1,6 @@
 package c1;
 
 import java.io.*;
-import java.util.concurrent.TimeUnit;
 
 public class ex1 {
     public static void main(String[] args) throws IOException, InterruptedException {
