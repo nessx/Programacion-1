@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - matriz1",
+            "request": "launch",
+            "mainClass": "matriz1",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - cuestionario",
+            "request": "launch",
+            "mainClass": "cc2.cuestionario",
+            "projectName": "Programacion-1_24f39515"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ex1",
             "request": "launch",
             "mainClass": "c1.ex1",
