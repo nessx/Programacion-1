@@ -1,3 +1,5 @@
+package proyecte2;
+
 import java.io.*;
 import java.util.logging.*;
 
