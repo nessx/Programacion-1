@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - estatgat",
+            "request": "launch",
+            "mainClass": "act9.estatgat",
+            "projectName": "Programacion-1_cb3b2383"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ex1",
             "request": "launch",
             "mainClass": "c1.ex1",
