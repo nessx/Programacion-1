@@ -23,9 +23,21 @@ public class persona {
             naci = Integer.parseInt(naci1);
             personas.setnacimiento(naci);
         }
+
+        System.out.print(nombres+" Esta vivo/a (Y/N)? ");
+        String res = reader.readLine();
+
+        if (res.equals("N") || res.equals("n")) {
+
+            System.out.print("introduce el año de defuncion: ");
+            String def1 = reader.readLine();
+            int def = Integer.parseInt(def1);
+            personas.setViu(def);
+        }
         
 
-        System.out.print(personas.getnacimiento());
+        System.out.println("nacimiento "+personas.getnacimiento());
+        System.out.print("defuncion "+personas.getdefuncion());
     }
 
 }

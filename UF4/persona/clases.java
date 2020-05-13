@@ -10,7 +10,15 @@ public class clases {
     int getnacimiento(){
         return nacimiento;
     }
-    
+
+    int getdefuncion(){
+        return defuncion;
+    }
+
+    public void setdefuncion(int defuncion){
+        this.defuncion=defuncion;
+    }
+
     public void setnacimiento(int nacimineto){
         this.nacimiento=nacimineto;
     }
@@ -25,7 +33,7 @@ public class clases {
         return compr;
     }
     
-    public void setViu(){
-
+    public void setViu(int ano){
+        defuncion = ano;
     }
 }
