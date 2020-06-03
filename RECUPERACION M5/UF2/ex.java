@@ -24,35 +24,6 @@ public class ex{
     //es la funcion encargada de comparar los caracteres
     public static void compararcaracteres (char [] palabra){
         for (i = 0 ;i < palabra.length ; i++){
-            char word = palabra[i]; 
-            switch(word){ 
-                case 'a':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador);
-                    break; 
-                case 'e':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break; 
-                case 'i':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                case 'o': 
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                case 'u':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                default: 
-                    System.out.print("Vocal no valida"); 
-            }
-            
-            //esta serie de if funciona correctamente, pero quiero lograr con switch lo que hace con if
-
-            /*
             if (palabra[i]=='a'){
                 contador++;
                 if (contador>=3){    
@@ -88,13 +59,40 @@ public class ex{
                 break;
                 }
             }
-            */
+
+            //testeo de switch es una prueba no es definitivo
+            /*
+            char word = palabra[i]; 
+            switch(word){ 
+                case 'a':
+                    contador++;
+                    verinfo(palabra[i], palabra, contador);
+                    break; 
+                case 'e':
+                    contador++;
+                    verinfo(palabra[i], palabra, contador); 
+                    break; 
+                case 'i':
+                    contador++;
+                    verinfo(palabra[i], palabra, contador); 
+                    break;
+                case 'o': 
+                    contador++;
+                    verinfo(palabra[i], palabra, contador); 
+                    break;
+                case 'u':
+                    contador++;
+                    verinfo(palabra[i], palabra, contador); 
+                    break;
+                default: 
+                    System.out.print("Vocal no valida"); 
+            }*/
         }
     }
 
     //esta solo hace de printer
     public static void verinfo(char letra, char[] palabra, int contador){
-        
+
         System.out.println("el nom de "+ palabra + " conte " + contador + " " +letra);
     }
 }
