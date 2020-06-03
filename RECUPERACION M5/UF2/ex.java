@@ -4,17 +4,21 @@ import java.io.*;
 
  
 public class ex{
+    //variables única para todas las instancias (objetos) de la clase (ocupa un único lugar en memoria)
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static int i,contador=0;
 
   public static void main(String[] args) throws IOException {
       char [] palabra=new char[15];
 
+      //le asigno a palabra lo que recibe de la funcion que pregunta en este caso getpalabra()  
       palabra=getpalabra();
+
+      //envia todo lo que es palabra a compararcaracteres
       compararcaracteres(palabra);
     }
 
-    //funcion encargada de preguntar la palabra y retornarla
+    //funcion encargada de preguntar la palabra y retornarla a la array de caracteres
     public static char[] getpalabra() throws IOException{
         System.out.printf("Diguem una paraula?: ");
 
@@ -23,6 +27,7 @@ public class ex{
 
     //es la funcion encargada de comparar los caracteres
     public static void compararcaracteres (char [] palabra){
+
         for (i = 0 ;i < palabra.length ; i++){
             if (palabra[i]=='a'){
                 contador++;
@@ -59,40 +64,16 @@ public class ex{
                 break;
                 }
             }
-
-            //testeo de switch es una prueba no es definitivo
-            /*
-            char word = palabra[i]; 
-            switch(word){ 
-                case 'a':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador);
-                    break; 
-                case 'e':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break; 
-                case 'i':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                case 'o': 
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                case 'u':
-                    contador++;
-                    verinfo(palabra[i], palabra, contador); 
-                    break;
-                default: 
-                    System.out.print("Vocal no valida"); 
-            }*/
         }
     }
 
     //esta solo hace de printer
     public static void verinfo(char letra, char[] palabra, int contador){
-
-        System.out.println("el nom de "+ palabra + " conte " + contador + " " +letra);
+        System.out.print("el nom de ");
+        for (i = 0 ;i < palabra.length ; i++){
+            System.out.print(palabra[i]); 
+        }
+        System.out.print(" conte " + contador + " " +letra);
     }
+    //end
 }
