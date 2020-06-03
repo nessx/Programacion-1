@@ -94,13 +94,7 @@ public class ex{
 
     //esta solo hace de printer
     public static void verinfo(char letra, char[] palabra, int contador){
-        //System.out.printf("el nom de " + letra + " " + palabra +" "+ contador);
-
+        
         System.out.println("el nom de "+ palabra + " conte " + contador + " " +letra);
-
-        //System.out.printf("el nom de "+ palabra + " conte " + contador + " " +letra);
-        //System.out.println(contador);
-        //System.out.println(letra);
-        //System.out.println(palabra);
     }
 }
