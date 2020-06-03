@@ -91,9 +91,13 @@ public class ex{
     //esta solo hace de printer
     /**
     * Constructor para la serie de números aleatorios
+    
     * @param letra Recive la letra introducida
+
     * @param palabra Recibe toda la informacion dentro de la array de caracteres
+
     * @param contador Recibe el contador
+
     */
     public static void verinfo(char letra, char[] palabra, int contador){
         System.out.print("el nom de ");
