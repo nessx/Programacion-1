@@ -90,6 +90,7 @@ try:
 	archivo2.write("<table>\n")
 	archivo2.write("<thead>\n")
 
+	## PARTE DE ARRIBA DATO1 DATO2 DATO... ###
 	## tuve que abrirlo otra vez por que con el de abajo no dejaba :(
 	with open(nombrearchivo+'.csv') as archivo3:
 		try:
@@ -120,6 +121,7 @@ try:
 			hostia = len(row)
 			for i in range (0,hostia-1):
 				archivo2.write("\t<td>")
+				print row
 				archivo2.write(row[i])
 				archivo2.write("\t</td>\n")
 
