@@ -90,6 +90,7 @@ public class M5_UF2_RECUPERATION{
             System.out.println("Algo funciona mal...");
         }
     }
+    
     //esta solo hace de printer
     /**
     * Constructor para la serie de números aleatorios
