@@ -3,13 +3,12 @@ package UF2;
 import java.io.*;
 
 /**
-
  *Este programa lo que hace es recibir una entrada de una palabra y devuelve una cuenta de cuantas vocales tiene
 
  * @author: Nestor Santana
 
  * @version: V1.0
-
+ * 
  */
  
 public class M5_UF2_RECUPERATION{
@@ -25,28 +24,25 @@ public class M5_UF2_RECUPERATION{
         //envia todo lo que es palabra a compararcaracteres
         compararcaracteres(palabra);
     }
-
-    //funcion encargada de preguntar la palabra y retornarla a la array de caracteres
      /**
 
-     * Método que devuelve el número de ítems (números aleatorios) existentes en la serie
+     * Metodo que devuelve la palabra introducida por el usuario
 
      * @return La palabra introducida por el usuario.
 
      */
+    //funcion encargada de preguntar la palabra y retornarla a la array de caracteres
     public static char[] getpalabra() throws IOException{
         System.out.printf("Diguem una paraula?: ");
         return reader.readLine().toCharArray();
     }
-
-    //es la funcion encargada de comparar los caracteres
     /**
-     * Constructor para la serie de números aleatorios
+     * Metodo que compara los caracteres recibidos por del metodo getpalabra
 
      * @param palabra recibe toda la informacion dentro de la array de caracteres
 
      */
-
+    //es la funcion encargada de comparar los caracteres
     public static void compararcaracteres (char [] palabra){
         try {
             for (int i = 0 ;i < palabra.length ; i++){
@@ -62,7 +58,7 @@ public class M5_UF2_RECUPERATION{
                     if (econtador>=1){   
                         counter++;   
                         result(palabra[i], palabra, econtador, counter);
-                }
+                    }
                 }
                 if (palabra[i]=='i'){
                     icontador++;
@@ -90,12 +86,10 @@ public class M5_UF2_RECUPERATION{
             System.out.println("Algo funciona mal...");
         }
     }
-    
-    //esta solo hace de printer
     /**
-    * Constructor para la serie de números aleatorios
+    * Metodo que imprime la comparacion
     
-    * @param letra Recive la letra introducida
+    * @param letra Recibe la letra introducida
 
     * @param palabra Recibe toda la informacion dentro de la array de caracteres
 
@@ -104,6 +98,7 @@ public class M5_UF2_RECUPERATION{
     * @param counter Recibe un contador
 
     */
+    //esta solo hace de printer
     public static void result(char letra, char[] palabra, int count, int counter){
         try {
             if (counter == 1) {
@@ -118,7 +113,7 @@ public class M5_UF2_RECUPERATION{
             }else{
                 System.out.println(" tiene " +count + " "+letra);
             }
-        } catch (Exception e) {
+        }catch (Exception e) {
             System.out.println("Algo funciona mal con la impresion...");
         }
     }
