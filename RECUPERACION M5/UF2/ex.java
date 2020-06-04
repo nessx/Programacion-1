@@ -48,43 +48,46 @@ public class ex{
 
      */
     public static void compararcaracteres (char [] palabra){
-
-        for (i = 0 ;i < palabra.length ; i++){
-            if (palabra[i]=='a'){
-                contador++;
-                if (contador>=3){    
-                    verinfo(palabra[i], palabra, contador);
-                    break;
+        try {
+            for (i = 0 ;i < palabra.length ; i++){
+                if (palabra[i]=='a'){
+                    contador++;
+                    if (contador>1){    
+                        verinfo(palabra[i], palabra, contador);
+                        break;
+                    }
+                }
+                if (palabra[i]=='e'){
+                    contador++;
+                    if (contador>1){    
+                        verinfo(palabra[i], palabra, contador);
+                        break;
+                    }
+                }
+                if (palabra[i]=='i'){
+                    contador++;
+                    if(contador>1){
+                        verinfo(palabra[i], palabra, contador);
+                        break;
+                    }
+                }
+                if (palabra[i]=='o'){
+                    contador++;
+                    if(contador>1){
+                        verinfo(palabra[i], palabra, contador);
+                        break;
+                    }
+                }
+                if (palabra[i]=='u'){
+                    contador++;
+                    if(contador>1){
+                        verinfo(palabra[i], palabra, contador);
+                        break;
+                    }
                 }
             }
-            if (palabra[i]=='e'){
-                contador++;
-                if (contador>=3){    
-                    verinfo(palabra[i], palabra, contador);
-                    break;
-               }
-            }
-            if (palabra[i]=='i'){
-                contador++;
-                if(contador>=3){
-                    verinfo(palabra[i], palabra, contador);
-                    break;
-                }
-            }
-            if (palabra[i]=='o'){
-                contador++;
-                if(contador>=3){
-                    verinfo(palabra[i], palabra, contador);
-                    break;
-                }
-            }
-            if (palabra[i]=='u'){
-                contador++;
-                if(contador>=3){
-                    verinfo(palabra[i], palabra, contador);
-                    break;
-                }
-            }
+        } catch (Exception e) {
+            System.out.println("Algo funciona mal...");
         }
     }
     
@@ -100,11 +103,15 @@ public class ex{
 
     */
     public static void verinfo(char letra, char[] palabra, int contador){
-        System.out.print("el nom de ");
-        for (i = 0 ;i < palabra.length ; i++){
-            System.out.print(palabra[i]); 
+        try {
+            System.out.print("el nom de ");
+            for (i = 0 ;i < palabra.length ; i++){
+                System.out.print(palabra[i]); 
+            }
+            System.out.print(" conte " + contador + " " +letra);
+        } catch (Exception e) {
+            System.out.println("Algo funciona mal con la impresion...");
         }
-        System.out.print(" conte " + contador + " " +letra);
     }
     //fin
 }
