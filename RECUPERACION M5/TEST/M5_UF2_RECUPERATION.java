@@ -1,7 +1,4 @@
-package UF2;
-
 import java.io.*;
-import static org.junit.Assert.*;
 
 /**
  *Este programa lo que hace es recibir una entrada de una palabra y devuelve una cuenta de cuantas vocales tiene
@@ -34,7 +31,7 @@ public class M5_UF2_RECUPERATION{
      */
     //funcion encargada de preguntar la palabra y retornarla a la array de caracteres
     public static char[] getpalabra() throws IOException{
-        System.out.printf("Diguem una palabra?: ");
+        System.out.printf("Diguem una paraula?: ");
         return reader.readLine().toCharArray();
     }
     /**
@@ -117,18 +114,6 @@ public class M5_UF2_RECUPERATION{
         }catch (Exception e) {
             System.out.println("Algo funciona mal con la impresion...");
         }
-    }
-
-    @Test
-    public void testComprovador() {
-        char [] palabra = {'c','a','s','p'};
-        int cnt=0;
-        for (int i=0;i<palabra.length;i++) {
-            if (palabra[i]== 'a' || palabra[i]== 'e' || palabra[i]== 'i' || palabra[i]== 'o' || palabra[i]== 'u') {
-                cnt++;
-            }
-        }
-        assertNotEquals(0,cnt);
     }
     //fin
 }

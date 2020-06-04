@@ -1,6 +1,9 @@
 package UF2;
 
 import java.io.*;
+
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,7 +15,7 @@ import static org.junit.Assert.*;
  * @see <a href="https://github.com/nessx/Programacion-1/tree/master/RECUPERACION%20M5/UF2">GitHub</a>
  */
  
-public class M5_UF2_RECUPERATION{
+public class M2_UF2_JNUIT{
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static int i, acontador=0, econtador = 0, icontador = 0, ocontador = 0, ucontador = 0, counter = 0 ;
 
@@ -120,7 +123,7 @@ public class M5_UF2_RECUPERATION{
     }
 
     @Test
-    public void testComprovador() {
+    public void comprobadorjunit() {
         char [] palabra = {'c','a','s','p'};
         int cnt=0;
         for (int i=0;i<palabra.length;i++) {
