@@ -12,7 +12,7 @@ import java.io.*;
 
  */
  
-public class ex{
+public class UF2_M5_MAIN{
     //variables única para todas las instancias (objetos) de la clase (ocupa un único lugar en memoria)
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static int i,contador=0;
