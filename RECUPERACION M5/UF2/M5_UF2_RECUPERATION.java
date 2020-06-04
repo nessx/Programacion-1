@@ -35,7 +35,7 @@ public class M5_UF2_RECUPERATION{
     public static char[] getpalabra() throws IOException{
         System.out.printf("Diguem una paraula?: ");
         return reader.readLine().toCharArray();
-    }
+    }f
     /**
      * Metodo que compara los caracteres recibidos por del metodo getpalabra
 
