@@ -50,35 +50,35 @@ public class M5_UF2_RECUPERATION{
                     acontador++;
                     if (acontador>=1 && i == palabra.length-1){  
                         counter++;  
-                        result(palabra[i], palabra, acontador, counter);
+                        verinfo(palabra[i], palabra, acontador, counter);
                     }
                 }
                 if (palabra[i]=='e'){
                     econtador++;
                     if (econtador>=1){   
                         counter++;   
-                        result(palabra[i], palabra, econtador, counter);
+                        verinfo(palabra[i], palabra, econtador, counter);
                     }
                 }
                 if (palabra[i]=='i'){
                     icontador++;
                     if(icontador>=1){
                         counter++;  
-                        result(palabra[i], palabra, icontador, counter);
+                        verinfo(palabra[i], palabra, icontador, counter);
                     }
                 }
                 if (palabra[i]=='o'){
                     ocontador++;
                     if(ocontador>=1){
                         counter++;  
-                        result(palabra[i], palabra, ocontador, counter);
+                        verinfo(palabra[i], palabra, ocontador, counter);
                     }
                 }
                 if (palabra[i]=='u'){
                     ucontador++;
                     if(ucontador>=1){
                         counter++;  
-                        result(palabra[i], palabra, ucontador, counter);
+                        verinfo(palabra[i], palabra, ucontador, counter);
                     }
                 }
             }
@@ -99,7 +99,7 @@ public class M5_UF2_RECUPERATION{
 
     */
     //esta solo hace de printer
-    public static void result(char letra, char[] palabra, int count, int counter){
+    public static void verinfo(char letra, char[] palabra, int count, int counter){
         try {
             if (counter == 1) {
                 System.out.print("La palabra");
