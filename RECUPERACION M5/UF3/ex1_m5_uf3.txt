@@ -1,0 +1,51 @@
+Exercici 1
+A partir de la llista de requeriments de l'enunciat:
+⦁	Especifica els requisits o requeriments (fes una llista)
+Reservas = 
+1.	Habitacion de hotel (por telefono o Internet)
+2.	Datos de reserva (Nombre, DNI, número de cuanta Bancaria, tipo de habitacion (individual, doble, triple, doble d’ús individual), regim (només desdejuni - AD, mitja pensió - MP, pensió completa - PC), número de reserva por un número 4 xifres)
+3.	Una vez echo la reserva se va asociar a una habitacion del hotel
+4.	No se podra entrar en el hotel a personas que no tengan reserva/codigo reserva.
+5.	 Si un cliente quiere disponer de su número de habitacion tendra que entregar en el hotel el número de reserva en el mostrador.
+6.	Si es una habitacion doble, triple, etc se tendra que introduccir los datos de reserva de cada cliente.
+7.	Si se abandona el hotel se tendra que dar el número de habitacion en el mostrador del hotel.
+8.	
+
+Modificar Reservas = 
+1.	Se puede modificar el nombre, dni, número de cuenta bancaria, tipo de d'habitación y el règim. Si haces algun tipo de cambio se genera otro número de reserva
+2.	El usuario no puede modificar el número de reserva.
+3.	Cuando modifiques el tipo de habitaicon tambien se modificara la habitacion de hotel.
+4.	Si se quiere anular la reserva tendremos que introduccir el número de reserva.
+5.	Una persona allojada a l’hotel en règim de pension completa y quiere participar en actividades de club social tendra que  dar el número de habitació i el codi de l’activitat. El sistema generarà un número de 2 cifras (codigo de reserva de la actividad).
+6.	Para modificar una actividad de club social tendria que disponer el codigo de la reseva de la actividad. Esto tambien se aplica al desapuntar-se de una.
+
+Admin =
+
+1.	Para crear  una nueva actividad social se tendra que especificar el nombre, horario y plazas.
+
+Instructores = 
+
+1.	Si se modifica el horario de la actividad social se cambiara de instructor.
+
+Servicios = 
+
+1.	Solo las personas alojadas podran disponer del servicio de despertador.
+2.	Para solicitar el servicio de despertador se tendra que dar el número de habitacion y hora para el despertador.
+
+⦁	Troba quins son els actors del sistema (enumera'ls, i explica per sobre el seu rol).
+Los actores serian =
+1.	Cliente
+2.	Instructor
+3.	Administrador
+⦁	Per cadascun, enuncia la seva llista de casos d’ús
+Cliente = 
+1.	Solicitar reservas
+2.	Solicitar servicios de hotel
+3.	Participar en actividades del hotel
+
+Instructor =
+1.	Modificar las actividades del hotel(principalmente horario)
+
+Admin =
+1.	Crear actividades del hotel
+2.	Mejorar la aplicacion y crear mas funciones
