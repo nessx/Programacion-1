@@ -4,6 +4,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - persona",
             "request": "launch",
+            "mainClass": "persona",
+            "projectName": "Programacion-1_cb3b2383"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ejercicio1",
+            "request": "launch",
+            "mainClass": "ejercicio1",
+            "projectName": "Programacion-1_cb3b2383"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - persona",
+            "request": "launch",
             "mainClass": "persona.persona",
             "projectName": "Programacion-1_cb3b2383"
         },
