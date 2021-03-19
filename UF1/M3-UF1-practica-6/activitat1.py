@@ -8,7 +8,10 @@ if E >=18:
 	print "Usted ya puede ir a prision!"
 else:
 	print "Usted es menor de edad"
-print "Adios", N
+despedida(N)
+
+def despedida(N):
+    return print "Adios", N
 
 
 
